@@ -1,26 +1,25 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import Global from './assets/styles/global';
+import { HeaderComponents } from './assets/components/header/HeaderComponents';
+import { HomeComponents } from './assets/components/home/HomeComponents';
+import { AboutComponents } from './assets/components/about/AboutComponents';
+import { HabilidadesComponents } from './assets/components/habilidades/HabilidadesComponents';
+import ProjectComponents from './assets/components/projects/ProjectComponents';
+import { ContactComponents } from './assets/components/contact/ContactComponents';
+import { FooterComponents } from './assets/components/footer/FooterComponents';
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+	return (
+		<div className='App'>
+			<Global />
+			<HeaderComponents />
+			<HomeComponents />
+			<AboutComponents />
+			<HabilidadesComponents />
+			<ProjectComponents />
+			<ContactComponents/>
+			<FooterComponents/>
+		</div>
+	);
 }
-
 export default App;
